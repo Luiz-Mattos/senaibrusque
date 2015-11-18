@@ -116,6 +116,7 @@
                     </div>
                 </div> <!-- row -->
                 <!-- fim do carrossel de imagens -->
+                <!-- CURSOS -->
             </section>
             <section id="cursos" class="container-fluid">
                 <h1>Cursos Abertos  </h1>
@@ -208,6 +209,7 @@
                 </div>
 
             </section>
+            <!-- Noticias -->
             <section id="noticias" class="container-fluid">
                 <h1>Notícias</h1>
 
@@ -369,16 +371,44 @@
 
 
             </section>
-            <section id="videos" class="container-fluid">
-                <h1>Vídeos</h1>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            </section>
-            <section id="contato" class="container-fluid">
-                <h1>Contato</h1>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            </section>
+        <section id="videos" class="container-fluid">
+            <div class="text-center">
+                <h1>Galeria Vídeos</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLXTxMOByxQKOZcxIvbgx_93ItPjnbqYIk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+            <!-- Contato -->
+        <section id="contato" class="container-fluid">
+            <h1>Contato</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Entre em contato, responderemos nas próximas 24 horas</p>
+                    <p><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+                        Brusque/SC
+                    </p>
+                    <p>
+                        <i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i>
+                        +55 (47) 3251-8900
+                    </p>
+                    <p>
+                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                        brusque@fiesc.com.br
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-inline">
+                                <input type="text" class="form-control" id="cNome" placeholder="Nome">
+                                <input type="email" class="form-control" id="cEmail" placeholder="E-mail">
+                        </div>
+                        <textarea class="form-control" rows="5" cols="40" id="cMensagem" placeholder="Mensagem"></textarea>
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
             <section id="local" class="container-fluid">
                 <div class="text-center">
                     <h1>Localização</h1>
