@@ -7,11 +7,9 @@
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
         <link rel="stylesheet" href="css/estilo.css"/>
-        <!-- Javascript -->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/meuscript.js"></script>
+
 
     </head>
     <body>
@@ -371,15 +369,15 @@
 
 
             </section>
-        <section id="videos" class="container-fluid">
-            <div class="text-center">
-                <h1>Galeria Vídeos</h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLXTxMOByxQKOZcxIvbgx_93ItPjnbqYIk" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
+            <section id="videos" class="container-fluid">
+                <div class="text-center">
+                    <h1>Galeria Vídeos</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLXTxMOByxQKOZcxIvbgx_93ItPjnbqYIk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
             <!-- Contato -->
             <?php include 'formContato.php'; ?>
-                
+
             <!-- Localização -->
             <section id="local" class="container-fluid">
                 <div class="text-center">
@@ -388,6 +386,13 @@
                 </div>
             </section>
 
+            <!-- Javascript -->
+            <script src="js/jquery-1.11.3.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
             <script src="js/meuscript.js"></script>
+            <script src="js/validator.js"></script>
+            <script src="js/meuscript.js"></script>
+            <script src="js/formScript.js"></script>
+
     </body>
 </html>
