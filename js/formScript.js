@@ -53,3 +53,4 @@ function formError() {
         $(this).removeClass();
     });
 }
+// newsletter

@@ -41,13 +41,14 @@ if (isset($_POST['btn'])) {
      * Recepção de dados
      */
     if (isset($_POST['email']) && !empty($_POST['email'])) {
-        //Filtragem de entrada ded dados
+        //Filtragem de entrada de dados
         //$email = $_POST['email']; //Não é correto
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
         $cod = gerarCodigo();
         //String SQL
         $sql = "INSERT INTO lista(email,cod,dtCadastro) "
                 . "values(:email,:cod,now())";
+
         $parametros = array(':email' => $email,
             ':cod' => $cod);
         $p = $conn->prepare($sql);
@@ -69,12 +70,7 @@ if (isset($_POST['btn'])) {
         //Listagem de e-mails
         header('Location: index.php');
         
-        /**
-         * Tarefa de casa
-         * Criar um e-mail HTML, enviando um link
-         * com o código, para a pessoa clicar
-         * e confirmar seu e-mail
-         */
+
     } else {
         header('Location: index.php');
     }
