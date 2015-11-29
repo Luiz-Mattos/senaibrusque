@@ -16,16 +16,8 @@
         <div class="container-fluid">
             <header class="jumbotron text-center" id="topo">
                 <h1>SENAI/SC Brusque</h1>
-                <p>Alo mundo do bootstrap</p>
 
-                
-                <form action="cadastro.php" method="post" role="form" class="form-inline" >
-                    <div class="form-group has-feedback">
-                        <input name="email" type="text" class="form-control" placeholder="seunome@provedor.com.br" size="40px"/>
-                        <i class="form-control-feedback glyphicon glyphicon-envelope"></i>
-                    </div>
-                    <button id="news" name="btn" type="submit" class="btn btn-success">Cadastrar</button>
-                </form>
+            <?php include 'formCadastro.php' ?>
 
             </header>
 
@@ -391,6 +383,7 @@
             <script src="js/validator.js"></script>
             <script src="js/meuscript.js"></script>
             <script src="js/formScript.js"></script>
+            <script src="js/cadastroScript.js"></script>
 
     </body>
 </html>
