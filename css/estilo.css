@@ -35,7 +35,7 @@ body {
 Seções
 */
 #inicio {padding-top:50px;height:500px;color: #fff; background-color: #DCDCDC; padding: 0;}
-#cursos {padding-top:50px;height:410px;color: #fff; background-color: #2E8B57;}
+#cursos {padding-top:50px;height:auto;color: darkslategrey; background-color: #2E8B57;}
 #noticias {padding-top:50px;height:500px;color: #fff; background-color: #115c35;}
 #fotos {padding-top:50px;height:930px;color: #fff; background-color: #2E8B57;}
 #videos {padding-top:50px;height:500px;color: #2F4F4F; background-color: #DCDCDC;}
@@ -92,4 +92,10 @@ Carrossel de imagens
   
   #contato .glyphicon{
       color: darkslategrey;
+  }
+
+  /** sistema de curso **/
+  #cursos .panel{
+      margin-left: 5%;
+      padding: 10px;
   }

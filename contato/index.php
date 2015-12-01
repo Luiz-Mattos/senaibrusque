@@ -106,11 +106,97 @@
                 <!-- fim do carrossel de imagens -->
                 <!-- CURSOS -->
             </section>
-            
-            
-            <!-- Cursos -->
-                <?php include 'cursos.php'?>
-            
+            <section id="cursos" class="container-fluid">
+                <h1>Cursos Abertos  </h1>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p><h4>TÉCNICO EM ELETROTÉCNICA</h4></p>
+                            <p><h6>Seu sonho é trabalhar com eletricidade? Então esse é o curso certo.</h6></p>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Técnico em eletrotécnica</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Seu sonho é trabalhar com eletricidade? Então esse é o curso certo. Aqui você se prepara para desenvolver, instalar e manter sistemas elétricos, sem deixar de lado o aprendizado de normas técnicas de segurança e de preservação ambiental. Não deixe o seu sonho desligado, venha para o SENAI.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p><h4>TÉCNICO EM MECÂNICA</h4></p>
+                            <p><h6>Gosta de máquinas e tudo o que compõe esse fantástico universo? Então esse curso é a sua cara.</h6></p>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal fade" role="dialog2">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Técnico em mecânica</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gosta de máquinas e tudo o que compõe esse fantástico universo? Então esse curso é a sua cara. Com ele você poderá atuar na elaboração de projetos, fabricação, instalação e manutenção de ferramentas, máquinas e equipamentos, além de coordenar equipes, planejar e controlar processo de produção e muito mais.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p><h4>TÉCNICO EM MODELAGEM DO VESTUÁRIO</h4></p>
+                            <p><h6>Faça o sucesso profissional cair bem em você.</h6></p>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal fade" role="dialog3">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Técnico em modelagem do vestuário</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Faça o sucesso profissional cair bem em você. Nesse curso, você se capacita em desenvolvimento e aplicação de bases de modelagem, confecção e avaliação de protótipos, preparação de peças-piloto e adequação para produção em série, além de outros processos relacionados ao setor do vestuário.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
             <!-- Noticias -->
             <section id="noticias" class="container-fluid">
 
