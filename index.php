@@ -199,94 +199,105 @@
             </section>
             <!-- Noticias -->
             <section id="noticias" class="container-fluid">
-                <h1>Notícias</h1>
 
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <p><h4>Noticia 1</h4></p>
-                            <p><h6>Noticia 1</h6></p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
-                        </div>
-                    </div>
-                    <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
+<?php 
+include 'postagens/menu.php';
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Noticia 1</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Noticia 1</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
+$posts = DBRead('posts', "WHERE status = 1 ORDER BY data DESC");
 
-                        </div>
-                    </div>
-                </div>
+if (!$posts)
+    echo '<h2>Nenhuma postagem encontrada!</h2>';
+else
+    foreach ($posts as $post):/*
+        $categ = DBRead('categorias', "WHERE id = '" . $post['categoria'] . "'");
+        $categ = ( $categ ) ? $categ[0]['titulo'] : 'SEM CATEGORIA';
+        ?>
 
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <p><h4>Noticia 2</h4></p>
-                            <p><h6>Noticia 2</h6></p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
-                        </div>
-                    </div>
-                    <div id="myModal" class="modal fade" role="dialog2">
-                        <div class="modal-dialog">
+                <h2>
+                    <a href="single.php?id=<?php echo $post['id']; ?>" title="<?php echo $post['titulo']; ?>">
+        <?php echo $post['titulo']; ?>
+                    </a>
+                </h2>
+                <p>
+                    por <b><?php echo $post['autor']; ?></b>
+                    em <b><?php echo date('d/m/Y', strtotime($post['data'])) ?></b> |
+                    <b><?php echo $categ; ?></b> |
+                    Visitas <b><?php echo $post['visitas']; ?></b>
+                </p>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Noticia 2</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Noticia 2</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
+                <p>
+        <?php
+        $str = strip_tags($post['conteudo']);
+        $len = strlen($str);
+        $max = 500;
 
-                        </div>
-                    </div>
-                </div>
+        if ($len <= $max)
+            echo $str;
+        else
+            echo substr($str, 0, $max) . '...';
+        */?>
+                </p>
+                <hr>
+ 
+ 
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p><h4>
+                            <a href="single.php?id=<?php echo $post['id']; ?>" title="<?php echo $post['titulo']; ?>">
+                            <?php echo $post['titulo']; ?>
+                            </a></h4></p>
+                        <p><h6>
+                            <?php
+                            $str = strip_tags($post['conteudo']);
+                            $len = strlen($str);
+                            $max = 500;
 
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <p><h4>Noticia 3</h4></p>
-                            <p><h6>Noticia 3</h6></p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
-                        </div>
-                    </div>
-                    <div id="myModal" class="modal fade" role="dialog3">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Noticia 3</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Noticia 3</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-
-                        </div>
+                            if ($len <= $max)
+                                echo $str;
+                            else
+                                echo substr($str, 0, $max) . '...';
+                            ?>
+                        </h6></p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><h5 class="h5">Mais informações</h5></button>
                     </div>
                 </div>
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">
+                                    <a href="single.php?id=<?php echo $post['id']; ?>" title="<?php echo $post['titulo']; ?>">
+                            <?php echo $post['titulo']; ?>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                            <?php
+                            $str = strip_tags($post['conteudo']);
+                            $len = strlen($str);
+                            $max = 500;
+
+                            if ($len <= $max)
+                                echo $str;
+                            else
+                                echo substr($str, 0, $max) . '...';
+                            ?>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                
+               <?php endforeach; ?>
             </section>
 
             <section id="fotos" class="container-fluid">
