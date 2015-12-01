@@ -1,0 +1,58 @@
+um detalhamento rapido do sistemas e como pode ser usado.
+
+
+segue abaixo as tabelas 
+
+Usuários.
+
+CREATE TABLE `usuario` ( 
+`id_user` TINYINT( 3 ) NOT NULL ,
+`usuario` VARCHAR( 20 ) NOT NULL ,
+`senha` VARCHAR( 32 ) NOT NULL ,
+`nivel` TINYINT( 3 ) NOT NULL ,
+PRIMARY KEY ( `id_user` ) ,
+UNIQUE ( 
+`usuario` 
+)
+) ENGINE = innodb;
+
+
+
+
+NOTICIAS.
+
+CREATE TABLE `noticias` (
+  `inicial` varchar(200) NOT NULL,
+  `descricao` varchar(100) NOT NULL,
+  `titulo` varchar(200) NOT NULL,
+  `noticia` varchar(3000) NOT NULL,
+  `email_autor` varchar(30) NOT NULL,
+  `direcao` varchar(10) NOT NULL,
+  `id_noticia` tinyint(5) NOT NULL auto_increment,
+  PRIMARY KEY  (`id_noticia`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+
+
+bem você deve criar uma tabela de menu caso queira que os usuários tenham direitos distintos.
+
+arquivo de configuração do banco de dados "config.php"
+
+arquivo de configuração de acordo com o nivel de login. verifica.php
+
+o arquivo verifica.php faz a verificação se vc está ou não logado no sistema nas páginas protegidas, 
+caso você queira proteger outras páginas basta incluir o comando abaixo.
+
+<?
+ob_start();
+include "verifica.php";
+?>
+
+no sistema de login usamos cookies para gravar a a entrada do usuário.
+
+bem qualquer duvida em relação a este sistema.
+
+envie e-mail para 
+capella.bruno@gmail.com
+
+espero que ajudem vcs..
