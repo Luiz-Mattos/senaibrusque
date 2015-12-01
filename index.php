@@ -295,9 +295,8 @@ else
 
                     </div>
                 </div>
-            </div>
-                
-               <?php endforeach; ?>
+            </div>               
+            <?php endforeach; ?>
             </section>
 
             <section id="fotos" class="container-fluid">
