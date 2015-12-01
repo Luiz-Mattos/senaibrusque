@@ -7,54 +7,7 @@
             <div class="panel-body">Resumo</div>
             <button type="button" class="btn btn-success center-block">Leia mais...</button>
         </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-                <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-                <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
-        
-        <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
-            <div class="panel-heading">Titulo</div>
-            <div class="panel-body">Resumo</div>
-            <button type="button" class="btn btn-success center-block">Leia mais...</button>
-        </div>
+
         
     </div>
     
