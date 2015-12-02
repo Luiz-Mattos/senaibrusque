@@ -308,6 +308,7 @@ else
             <script src="js/meuscript.js"></script>
             <script src="js/formScript.js"></script>
             <script src="js/cadastroScript.js"></script>
+            <script src="js/curso.js"></script>
 
     </body>
 </html>
