@@ -28,9 +28,9 @@ function converteDataMySQLPHP($dataMySQL) {
     return $dataPHP;
 }
 $id = $_GET['id'];
-        $sql = "SELECT n.titulo,n.conteudo,n.dtCadastro,a.nome from noticia n inner join autor a using(idautor) where noticiaid = '$id'";
+        $sql = "SELECT n.titulo,n.conteudo,n.dtCadastro,a.nome from noticia n inner join autor a using(idautor) where id = '$id'";
 
-        echo $sql; die;
+        
         
         $q = $conn->query($sql);
         $q->setFetchMode(PDO::FETCH_ASSOC);
@@ -50,18 +50,17 @@ $id = $_GET['id'];
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"><?= $_GET['$titulo'] ?></h4>
+            <h4 class="modal-title"><?= $_GET['$titulo']?></h4>
         </div>
         <div class="modal-body">
 
-            <h1>Titulo Do Curso 1</h1>
             <time class="h4"><?= $dtCadastro; ?></time>
-            <p>Autor: <?= $autor; ?></p>
-            <?= utf8_decode($conteudo); ?>
+            <p>Autor: <?= $autor;?></p>
+            <?= utf8_decode($conteudo);?>
 
-            <p><?= $_GET['$conteudo'] ?></p>
-            <p><?= $_GET['$conteudo'] ?></p>
-            <p><?= $_GET['$conteudo'] ?></p>
+            <p><?= $_GET['$conteudo']?></p>
+            <p><?= $_GET['$conteudo']?></p>
+            <p><?= $_GET['$conteudo']?></p>
 
         </div>
         <div class="modal-footer">
